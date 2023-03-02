@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="props/favicon.ico">
+    <title>Survey Form | certificado pt.1</title>
+</head>
+<body>
+    <h1 id="title">Vitey's Survey Form</h1>
+    <p id="desc">Please, fill in with the required info </p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label id="name-label" for="name">Full Name <input id="name" required type="text" placeholder="Enter your name"></label>
+            <label id="email-label" for="email">Email <input type="email" id="email" required placeholder="exemple@email.com"></label>
+            <label id="number-label" for="age">Age <input id="agr" type="number" min="15" max="110" placeholder="This is optional"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> What do you think about this site?
+                <select id="dropdown">
+                    <option value="0">(select one)</option>
+                    <option value="1">unproffesional</option>
+                    <option value="2">a piece of shit</option>
+                    <option value="3">at least you tried</option>
+                    <option value="4">cute</option>
+                    <option value="5">bababooey</option>
+                </select>
+            </label>
+            <label>You think you can help make this site better?</label>
+            <label for="1stR"><input value="yes" class="radio" name="coolR" type="radio" id="1stR"> Yes</label>
+            <label for="2ndR"><input value="no" class="radio" name="coolR" type="radio" id="2ndR"> No</label>            
+        </fieldset>
+        <fieldset>
+            <label>What do you think that would make this site better?</label>
+            <label for="1stC"><input class="radio" value="design" name="check" type="checkbox" id="1stC">Better design</label>
+            <label for="2ndC"><input class="radio" value="boting" name="check" type="checkbox" id="2ndC">Less boring</label>
+            <label for="3rdC"><input class="radio" value="func" name="check" type="checkbox" id="3rdC">More functionality</label>
+            <label for="4thC"><input class="radio" value="other-idk" name="check" type="checkbox" id="4thC">Other</label>
+            <label for="think">Tell me what you think <textarea id="think" cols="30" rows="3" placeholder="your opinion"></textarea></label>
+        </fieldset>
+    <input value="submit" type="submit">
+</form>
+</body>
+</html>
